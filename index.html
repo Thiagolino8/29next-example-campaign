@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,20 +14,12 @@
     <div class="topbar py-3 py-lg-4">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div
-            class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center pb-2 pb-md-0"
-          >
+          <div class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center pb-2 pb-md-0">
             <div class="logo">
-              <img
-                src="img/logo.png"
-                alt="Example Campaign"
-                class="img-fluid"
-              />
+              <img src="img/logo.png" alt="Example Campaign" class="img-fluid" />
             </div>
           </div>
-          <div
-            class="col-md-7 d-flex justify-content-center justify-content-md-end align-items-center"
-          >
+          <div class="col-md-7 d-flex justify-content-center justify-content-md-end align-items-center">
             <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item is-current">
@@ -54,9 +47,7 @@
                     <div class="">
                       <div class="h5">Order Summary</div>
                     </div>
-                    <div
-                      class="d-flex justify-content-between px-3 pt-2 pb-1 border-bottom text-uppercase fs-7"
-                    >
+                    <div class="d-flex justify-content-between px-3 pt-2 pb-1 border-bottom text-uppercase fs-7">
                       <div>Item</div>
                       <div>Price</div>
                     </div>
@@ -65,26 +56,20 @@
                         <span class="selected-product-name">{{package}}</span>
                       </div>
                       <div class="text-secondary">
-                        <span class="selected-product-price"></span
-                        ><span class="fs-8"> /ea</span>
+                        <span class="selected-product-price"></span><span class="fs-8"> /ea</span>
                       </div>
                     </div>
                     <div class="rounded-3 p-3 bg-xlight">
                       <div class="justify-content-between py-2 d-flex fw-bold">
                         <div>Shipping:</div>
                         <div>
-                          <span class="selected-shipping-price text-secondary"
-                            >FREE</span
-                          >
+                          <span class="selected-shipping-price text-secondary">FREE</span>
                         </div>
                       </div>
                       <div class="d-flex justify-content-between pt-1">
                         <div class="text-dark fw-bold">Today's Total:</div>
                         <div>
-                          <span
-                            class="order-summary-total-value fs-5 text-black fw-bold"
-                            >0</span
-                          >
+                          <span class="order-summary-total-value fs-5 text-black fw-bold">0</span>
                         </div>
                       </div>
                     </div>
@@ -97,133 +82,59 @@
             <form class="form" novalidate="novalidate">
               <input type="hidden" id="card_token" name="card_token" />
               <input type="hidden" name="payment_method" id="payment_method" />
-              <input
-                type="hidden"
-                name="selected_package_id"
-                id="selected_package_id"
-              />
-              <input
-                type="hidden"
-                name="shipping_method"
-                id="shipping_method"
-              />
-              <input
-                type="hidden"
-                name="billing_same_as_shipping_address"
-                id="billing_same_as_shipping_address"
-                value="true"
-              />
+              <input type="hidden" name="selected_package_id" id="selected_package_id" />
+              <input type="hidden" name="shipping_method" id="shipping_method" />
+              <input type="hidden" name="billing_same_as_shipping_address" id="billing_same_as_shipping_address" value="true" />
               <div class="step-title">STEP 2: CUSTOMER INFORMATION</div>
               <hr class="mt-2" />
-              <div
-                id="form-info"
-                class="bg-white rounded-3 border p-2 p-lg-3 mb-5"
-              >
+              <div id="form-info" class="bg-white rounded-3 border p-2 p-lg-3 mb-5">
                 <div class="form-customer-ino">
                   <div class="row mb-3 g-2">
                     <div class="col-sm col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <input
-                          type="text"
-                          name="first_name"
-                          maxlength="255"
-                          autocomplete="given-name"
-                          class="form-control"
-                          required
-                          id="id_first_name"
-                          placeholder="First Name"
-                        />
+                        <input type="text" name="first_name" maxlength="255" autocomplete="given-name" class="form-control" required id="id_first_name" placeholder="First Name" />
                         <label for="id_first_name">First Name</label>
                       </div>
                       <div class="invalid-message invalid-fname"></div>
                     </div>
                     <div class="col-sm col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <input
-                          type="text"
-                          name="last_name"
-                          maxlength="255"
-                          autocomplete="family-name"
-                          class="form-control"
-                          id="id_last_name"
-                          placeholder="Last Name"
-                        />
+                        <input type="text" name="last_name" maxlength="255" autocomplete="family-name" class="form-control" id="id_last_name" placeholder="Last Name" />
                         <label for="id_last_name">Last Name</label>
                       </div>
                       <div class="invalid-message invalid-lname"></div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating">
-                        <input
-                          type="email"
-                          placeholder="Email address"
-                          name="email"
-                          maxlength="254"
-                          class="form-control"
-                          id="id_email"
-                          autocomplete="email"
-                        />
+                        <input type="email" placeholder="Email address" name="email" maxlength="254" class="form-control" id="id_email" autocomplete="email" />
                         <label for="id_email">Email</label>
                       </div>
                       <div class="invalid-message invalid-email"></div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating">
-                        <input
-                          type="tel"
-                          name="phone_number"
-                          placeholder="Phone number"
-                          autocomplete="tel"
-                          class="form-control"
-                          id="id_phone_number"
-                          maxlength="20"
-                        />
+                        <input type="tel" name="phone_number" placeholder="Phone number" autocomplete="tel" class="form-control" id="id_phone_number" maxlength="20" />
                         <label for="id_phone_number">Phone Number</label>
                       </div>
                       <div class="invalid-message invalid-ph"></div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating">
-                        <input
-                          type="text"
-                          placeholder="Address"
-                          name="shipping_address_line1"
-                          maxlength="255"
-                          autocomplete="address-line1"
-                          class="form-control"
-                          id="id_shipping_address_line1"
-                        />
+                        <input type="text" placeholder="Address" name="shipping_address_line1" maxlength="255" autocomplete="address-line1" class="form-control" id="id_shipping_address_line1" />
                         <label for="id_shipping_address_line1">Address</label>
                       </div>
-                      <div
-                        class="invalid-message invalid-shipping_address_line1"
-                      ></div>
+                      <div class="invalid-message invalid-shipping_address_line1"></div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating">
-                        <input
-                          type="text"
-                          name="shipping_address_line4"
-                          maxlength="255"
-                          autocomplete="address-level2"
-                          class="form-control"
-                          id="id_shipping_address_line4"
-                          placeholder="City"
-                        />
+                        <input type="text" name="shipping_address_line4" maxlength="255" autocomplete="address-level2" class="form-control" id="id_shipping_address_line4" placeholder="City" />
                         <label for="id_shipping_address_line4">City</label>
                       </div>
-                      <div
-                        class="invalid-message invalid-shipping_address_line4"
-                      ></div>
+                      <div class="invalid-message invalid-shipping_address_line4"></div>
                     </div>
                     <div class="col-sm col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <select
-                          class="form-select"
-                          name="shipping_state"
-                          id="id_shipping_state"
-                          autocomplete="address-level1"
-                        >
+                        <select class="form-select" name="shipping_state" id="id_shipping_state" autocomplete="address-level1">
                           <option value="">Select state</option>
                           <option value="AL">Alabama</option>
                           <option value="AK">Alaska</option>
@@ -302,35 +213,19 @@
                     </div>
                     <div class="col-sm col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <input
-                          type="text"
-                          placeholder="ZIP"
-                          name="shipping_postcode"
-                          maxlength="64"
-                          autocomplete="postal-code"
-                          class="form-control"
-                          id="id_shipping_postcode"
-                        />
+                        <input type="text" placeholder="ZIP" name="shipping_postcode" maxlength="64" autocomplete="postal-code" class="form-control" id="id_shipping_postcode" />
                         <label for="id_shipping_postcode">ZIP</label>
                       </div>
-                      <div
-                        class="invalid-message invalid-shipping_postcode"
-                      ></div>
+                      <div class="invalid-message invalid-shipping_postcode"></div>
                     </div>
                     <div class="col-12">
                       <div class="form-floating">
-                        <select
-                          class="form-select"
-                          name="shipping_country"
-                          id="id_shipping_country"
-                        >
+                        <select class="form-select" name="shipping_country" id="id_shipping_country">
                           <option value="US">United States</option>
                         </select>
                         <label for="id_shipping_country">Country</label>
                       </div>
-                      <div
-                        class="invalid-message invalid-shipping_country"
-                      ></div>
+                      <div class="invalid-message invalid-shipping_country"></div>
                     </div>
                   </div>
                 </div>
@@ -339,10 +234,7 @@
               <hr class="mt-2" />
               <div class="checkout_express-buttons">
                 <div class="d-grid mb-3">
-                  <button
-                    type="button"
-                    class="btn btn-lg btn-express is-paypal pay-with-paypal"
-                  >
+                  <button type="button" class="btn btn-lg btn-express is-paypal pay-with-paypal">
                     <span class="fs-8 text-dark me-1">Pay with</span>
                     <img src="img/paypal.svg" height="30px" alt="" />
                   </button>
@@ -354,33 +246,20 @@
               <div class="bg-white rounded-3 border mb-3">
                 <div id="form-cc" class="form form-cc p-2 p-lg-3">
                   <div class="row g-2 mb-3">
-                    <div
-                      class="col-12 d-flex justify-content-between align-items-center"
-                    >
+                    <div class="col-12 d-flex justify-content-between align-items-center">
                       <h5>Credit/Debit:</h5>
                       <img src="img/creditCard.svg" alt="" class="ms-1" />
                     </div>
                     <div id="payment-error-block"></div>
                     <div class="col-12">
                       <div class="form-cc-card">
-                        <div
-                          id="bankcard-number"
-                          class="form-control p-0"
-                        ></div>
+                        <div id="bankcard-number" class="form-control p-0"></div>
                       </div>
-                      <div
-                        class="invalid-message invalid-cc"
-                        id="invalid-cc"
-                      ></div>
+                      <div class="invalid-message invalid-cc" id="invalid-cc"></div>
                     </div>
                     <div class="col-sm col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <select
-                          class="form-select"
-                          name="expiry_month"
-                          id="id_expiry_month"
-                          autocomplete="cc-exp-month"
-                        >
+                        <select class="form-select" name="expiry_month" id="id_expiry_month" autocomplete="cc-exp-month">
                           <option value="" selected disabled>
                             Please Select
                           </option>
@@ -402,12 +281,7 @@
                     </div>
                     <div class="col-sm col-lg-12 col-xl-6">
                       <div class="form-floating">
-                        <select
-                          class="form-select"
-                          name="expiry_year"
-                          id="id_expiry_year"
-                          autocomplete="cc-exp-year"
-                        >
+                        <select class="form-select" name="expiry_year" id="id_expiry_year" autocomplete="cc-exp-year">
                           <option value="" selected disabled>
                             Please Select
                           </option>
@@ -439,24 +313,14 @@
                       <div class="form-cc-cvv">
                         <div id="bankcard-cvv" class="form-control p-0"></div>
                       </div>
-                      <div
-                        class="invalid-message invalid-cvv"
-                        id="invalid-cvv"
-                      ></div>
+                      <div class="invalid-message invalid-cvv" id="invalid-cvv"></div>
                     </div>
                   </div>
 
                   <div class="row" id="step-3">
                     <div class="col">
                       <div class="d-grid mb-4">
-                        <button
-                          id="cc-submit-button"
-                          type="button"
-                          class="btn btn-lg btn-success btn-checkout pay-with-cc"
-                          data-loading-text="Processing"
-                          data-text="Pay with Credit Card"
-                          disabled
-                        >
+                        <button id="cc-submit-button" type="button" class="btn btn-lg btn-success btn-checkout pay-with-cc" data-loading-text="Processing" data-text="Pay with Credit Card" disabled>
                           Pay with Credit Card
                         </button>
                       </div>
@@ -473,9 +337,7 @@
     <footer class="footer">
       <div class="container pt-4 pb-5">
         <div class="row">
-          <div
-            class="col-12 mt-3 pt-2 text-center footer-copyright d-flex flex-column flex-sm-row justify-content-between align-items-center"
-          >
+          <div class="col-12 mt-3 pt-2 text-center footer-copyright d-flex flex-column flex-sm-row justify-content-between align-items-center">
             <div class="mb-4 mb-sm-0 fs-8 text-light">
               ©2023 <span class="text-secondary">Example Campaign</span>. All
               Rights Reserved.
@@ -486,7 +348,7 @@
     </footer>
   </body>
   <script type="text/javascript">
-    const publicKey = 'HJiDgB1BcNDWx0lJYvP79mqDeRN8d0EVN9DfqYLv';
+    const publicKey = 'BufhMQTxSfFDugMRWwojjn3DurImC2HvmOv8AeQ4';
     const nextURL = '/upsell.html';
     const offers = {
       priceRetail: 20.0,
@@ -540,4 +402,5 @@
   <script type="text/javascript" src="js/campaign.js"></script>
   <script type="text/javascript" src="js/checkout.js"></script>
   <script type="text/javascript" src="js/form.js"></script>
+
 </html>
